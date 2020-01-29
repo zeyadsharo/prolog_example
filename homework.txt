@@ -1,0 +1,5 @@
+clac(5,6,'+')      output 11
+clac(5,6,'-')       output -1
+clac(5,6,'*')       output 30
+clac(5,6,'/')      output 0.83333
+calc(5,6,'p')      5 power 6 =?

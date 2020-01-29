@@ -1,0 +1,17 @@
+pn:-write('enter A number :'),read(A),
+    write('enter B number: '),read(B),
+    write('enter C number: '),read(C),check(A,B,C).
+
+check(A,B,C):-A>B,A>C,B>C,write('A,B,C').
+check(A,B,C):-B>A,B>C,A>C,write('B,A,C').
+
+check(A,B,C):-B>A,B>C,C>A,write('B,C,A').
+
+check(A,B,C):-A>B,A>C,C>B,write('A,C,B').
+
+check(A,B,C):-C>A,C>B,B>A,write('C,B,A').
+
+check(A,B,C):-C>B,C>A,A>B,write('C,A,B').
+
+
+

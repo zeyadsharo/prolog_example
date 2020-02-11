@@ -12,11 +12,6 @@ number([_|T], X):- number(T,X).
 max([],X):-write(X),!.
 max([H|T],X):-X<H,X1 is H,max(T,X1);max(T,X).
 
-
-
-
-
-
 %[1,4,2,5,3,7]  result is 17 1+4+5+7 home work 
-sumlist([],X):-write(X),!.
-sumlist([H|T],X):-H>X,X1 is X+H,X1 is H,sumlist(T,X1);sumlist(T,X1).
+sumlist([],X,C):-write(X),!.
+sumlist([H|T],X,C):-1 is mod(C,2),X1 is X+H,C1 is C+1,sumlist(T,X1,C1);C1 is C+1,sumlist(T,X,C1).

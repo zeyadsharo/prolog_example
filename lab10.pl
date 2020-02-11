@@ -21,5 +21,6 @@ interm(7,seven).
 interm(8,eight).
 interm(9,nine).
 inword([],[]).
-inword([N|W],[N1|W1]):-interm(N,N1),inword(W,W1).
+inword([N|W],[N1|W1]):-interm(N,N1),
+inword(W,W1).
 
